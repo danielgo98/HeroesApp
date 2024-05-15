@@ -1,7 +1,7 @@
 {
   "users": [
     {
-      "id": "1",
+      "id": 1,
       "usuario": "John Doe",
       "email": "john.due@gmail.com"
     }
@@ -166,15 +166,6 @@
       "alter_ego": "Norrin Radd",
       "first_appearance": "The Fantastic Four #48",
       "characters": "Norrin Radd"
-    },
-    {
-      "id": "",
-      "superhero": "Daniel",
-      "publisher": "Marvel Comics",
-      "alter_ego": "deku",
-      "first_appearance": "Hiberus 2023",
-      "characters": "Daniel",
-      "alt_img": "https://i.pinimg.com/564x/35/c4/4b/35c44b8684d72d1100d72f87dfe5e69e.jpg"
     }
   ]
 }
