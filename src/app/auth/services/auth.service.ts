@@ -24,7 +24,7 @@ export class AuthService {
     return this.http.get<User>(`${this.baseUrl}/users/1`)
       .pipe(
         tap( user => this.user = user),
-        tap(user => localStorage.setItem('token', 'asdasfasd.asdasdasfw.324ergerg')),
+        tap(user => localStorage.setItem('token', 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIxMjM0NTY3ODkwIiwibmFtZSI6IkpvaG4gRG9lIiwiaWF0IjoxNTE2MjM5MDIyfQ.SflKxwRJSMeKKF2QT4fwpMeJf36POk6yJV_adQssw5c')),
       );
   }
 
