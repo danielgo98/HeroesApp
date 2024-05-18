@@ -21,10 +21,16 @@ export class AuthService {
 
   login(email: string, password: string): Observable<User> {
 
-    this.http.get<User>(`${this.baseUrl}/user/1`)
-    .pipe(
-      tap( user => this.user = user)
-    );
+    return this.http.get<User>(`${this.baseUrl}/users/1`)
+      .pipe(
+        tap( user => this.user = user),
+        tap(user => localStorage.setItem('token', 'asdasfasd.asdasdasfw.324ergerg')),
+      );
+  }
+
+  logout() {
+    this.user = undefined;
+    localStorage.clear();
   }
 
 }
